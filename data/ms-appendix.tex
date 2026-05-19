@@ -3,7 +3,7 @@
 本研究在实体抽取阶段采用``双重标签''体系：第一层为面向地方文化记忆识别的 AI 分级标签，分为 6 个一级体系、28 个二级类型；第二层为便于同官方资源名录衔接的官方分类标签。前者用于保证典籍文本中的人物、空间、技艺、文献和历史时序能够被完整识别，后者用于和非遗名录、文物保护单位、历史文化名镇名村、公共文化资源等管理口径发生对应。
 
 {\def\LTcaptype{none} % do not increment counter
-\begin{longtable}[]{@{}
+\begin{longtable}{@{}
   >{\centering\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
   >{\centering\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
   >{\centering\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
@@ -59,7 +59,7 @@ F 历史时序体系 & F3 发展阶段类 & 形成期、兴盛期、转型期等
 \textbf{C.1 沉睡潜力区（MI 最负 Top 10）}
 
 {\def\LTcaptype{none} % do not increment counter
-\begin{longtable}[]{@{}lccccc@{}}
+\begin{longtable}{@{}lccccc@{}}
 \toprule\noalign{}
 名称 & 镇街 & CMI & OAI & THI & MI \\
 \midrule\noalign{}
@@ -82,7 +82,7 @@ F 历史时序体系 & F3 发展阶段类 & 形成期、兴盛期、转型期等
 \textbf{C.2 空心景点区（MI 最正 Top 10）}
 
 {\def\LTcaptype{none} % do not increment counter
-\begin{longtable}[]{@{}lccccc@{}}
+\begin{longtable}{@{}lccccc@{}}
 \toprule\noalign{}
 名称 & 镇街 & CMI & OAI & THI & MI \\
 \midrule\noalign{}
@@ -105,7 +105,7 @@ F 历史时序体系 & F3 发展阶段类 & 形成期、兴盛期、转型期等
 \textbf{C.3 核心耦合区（全部样本）}
 
 {\def\LTcaptype{none} % do not increment counter
-\begin{longtable}[]{@{}
+\begin{longtable}{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1304}}
   >{\centering\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1739}}
   >{\centering\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1739}}
@@ -158,5 +158,5 @@ MI
 \item
   OAI × MI（载体级）: Pearson r = −0.440（正文核心发现）；
 \item
-  OAI\_mean × THI\_mean（镇街级）: Pearson r = 0.702（评级对 THI 的带动）。
+  OAI\_mean × THI\_mean（镇街级）: Pearson r = 0.702（评级与 THI 的关联）。
 \end{itemize}
