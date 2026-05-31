@@ -3,7 +3,7 @@
 本研究在实体抽取阶段采用``双重标签''体系：第一层为面向地方文化记忆识别的 AI 分级标签，分为 6 个一级体系、28 个二级类型；第二层为便于同官方资源名录衔接的官方分类标签。前者用于保证典籍文本中的人物、空间、技艺、文献和历史时序能够被完整识别，后者用于和非遗名录、文物保护单位、历史文化名镇名村、公共文化资源等管理口径发生对应。
 
 {\def\LTcaptype{none} % do not increment counter
-\begin{longtable}{@{}
+\begin{longtable}[]{@{}
   >{\centering\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
   >{\centering\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
   >{\centering\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
@@ -50,94 +50,86 @@ F 历史时序体系 & F3 发展阶段类 & 形成期、兴盛期、转型期等
 
 按镇街：西樵镇 89、九江镇 33、丹灶镇 30、桂城街道 8、大沥镇 3、狮山镇 1、里水镇 1。当前指数表已统一到镇街字段，因此正文和附录均按同一镇街口径统计。
 
-完整清单作为载体级指数附表留存，正文仅摘录类型分布、镇街分布和典型样本。
+完整清单在附录 C 中列出核心指标，正文仅摘录类型分布、镇街分布和典型样本。
 
 官方资源扩展候选库总量为 710 条，其中保留原锚点 220 条，新增去重后的官方候选锚点 490 条。该库用于附加诊断和后续人工校核，不直接替代本论文 165 条指数计算样本。
 
-\chapter{载体级指数与错位分类样例}\label{ux8f7dux4f53ux7ea7ux6307ux6570ux4e0eux9519ux4f4dux5206ux7c7bux6837ux4f8b}
+\chapter{载体级指数与错位分类样例}
+
+附录 C 不展开 165 条全量表，而是摘录三类最能说明错位结构的代表样本。完整载体级指数表仍以 \texttt{output/tables/indices\_anchors.csv} 作为电子附表留存。
 
 \textbf{C.1 沉睡潜力区（MI 最负 Top 10）}
 
-{\def\LTcaptype{none} % do not increment counter
-\begin{longtable}{@{}lccccc@{}}
-\toprule\noalign{}
+\begingroup
+\small
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.10}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.34\textwidth}>{\centering\arraybackslash}p{0.12\textwidth}>{\centering\arraybackslash}p{0.09\textwidth}>{\centering\arraybackslash}p{0.09\textwidth}>{\centering\arraybackslash}p{0.09\textwidth}>{\centering\arraybackslash}p{0.09\textwidth}@{}}
+\toprule
 名称 & 镇街 & CMI & OAI & THI & MI \\
-\midrule\noalign{}
+\midrule
 \endhead
-\bottomrule\noalign{}
+\bottomrule
 \endlastfoot
-西樵镇松塘村 & 西樵镇 & 80.39 & 100.0 & 4.48 & −85.72 \\
-九江镇烟桥烟南村 & 九江镇 & 84.51 & 100.0 & 7.09 & −85.16 \\
-丹灶镇仙岗社区 & 丹灶镇 & 69.35 & 100.0 & 4.48 & −80.20 \\
-赛龙舟（九江传统龙舟） & 九江镇 & 78.11 & 75.0 & 0.00 & −76.55 \\
-西樵山仙姑亭 & 西樵镇 & 98.55 & 50.0 & 0.00 & −74.28 \\
-丹灶镇南沙棋盘村 & 丹灶镇 & 70.98 & 75.0 & 0.00 & −72.99 \\
-丹灶镇棋盘村 & 丹灶镇 & 70.98 & 75.0 & 0.00 & −72.99 \\
-九江镇烟桥村 & 九江镇 & 84.77 & 75.0 & 7.09 & −72.79 \\
-西樵镇百西村头村 & 西樵镇 & 80.91 & 75.0 & 7.09 & −70.86 \\
-丹灶镇仙岗村 & 丹灶镇 & 70.47 & 75.0 & 4.48 & −68.26 \\
+西樵镇松塘村 & 西樵镇 & 80.39 & 100.00 & 4.48 & −85.72 \\
+九江镇烟桥烟南村 & 九江镇 & 84.51 & 100.00 & 7.09 & −85.16 \\
+丹灶镇仙岗社区 & 丹灶镇 & 69.35 & 100.00 & 4.48 & −80.20 \\
+赛龙舟（九江传统龙舟） & 九江镇 & 78.11 & 75.00 & 0.00 & −76.55 \\
+西樵山仙姑亭 & 西樵镇 & 98.55 & 50.00 & 0.00 & −74.28 \\
+丹灶镇南沙棋盘村 & 丹灶镇 & 70.98 & 75.00 & 0.00 & −72.99 \\
+丹灶镇棋盘村 & 丹灶镇 & 70.98 & 75.00 & 0.00 & −72.99 \\
+九江镇烟桥村 & 九江镇 & 84.77 & 75.00 & 7.09 & −72.79 \\
+西樵镇百西村头村 & 西樵镇 & 80.91 & 75.00 & 7.09 & −70.86 \\
+丹灶镇仙岗村 & 丹灶镇 & 70.47 & 75.00 & 4.48 & −68.26 \\
 \end{longtable}
-}
+\endgroup
 
 \textbf{C.2 空心景点区（MI 最正 Top 10）}
 
-{\def\LTcaptype{none} % do not increment counter
-\begin{longtable}{@{}lccccc@{}}
-\toprule\noalign{}
+\begingroup
+\small
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.10}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.34\textwidth}>{\centering\arraybackslash}p{0.12\textwidth}>{\centering\arraybackslash}p{0.09\textwidth}>{\centering\arraybackslash}p{0.09\textwidth}>{\centering\arraybackslash}p{0.09\textwidth}>{\centering\arraybackslash}p{0.09\textwidth}@{}}
+\toprule
 名称 & 镇街 & CMI & OAI & THI & MI \\
-\midrule\noalign{}
+\midrule
 \endhead
-\bottomrule\noalign{}
+\bottomrule
 \endlastfoot
-南海农谚 & 桂城街道 & 0.00 & 25.0 & 87.87 & 75.37 \\
-南海广式旺阁酱油酿造技艺 & 桂城街道 & 0.00 & 25.0 & 70.00 & 57.50 \\
-大伸市 & 九江镇 & 0.00 & 0.0 & 54.82 & 54.82 \\
-光分亭 & 西樵镇 & 0.00 & 50.0 & 77.57 & 52.57 \\
-红棉公园民国建筑群 & 九江镇 & 0.00 & 0.0 & 51.30 & 51.30 \\
-沙基圩 & 西樵镇 & 0.00 & 0.0 & 46.88 & 46.88 \\
-湖山胜迹门楼 & 西樵镇 & 14.70 & 50.0 & 78.27 & 45.92 \\
-禄舟万寿堂 & 西樵镇 & 0.00 & 50.0 & 67.96 & 42.96 \\
-大桐圩 & 西樵镇 & 0.00 & 0.0 & 42.58 & 42.58 \\
-西联村神诞 & 桂城街道 & 0.00 & 25.0 & 55.07 & 42.57 \\
+南海农谚 & 桂城街道 & 0.00 & 25.00 & 87.87 & 75.37 \\
+南海广式旺阁酱油酿造技艺 & 桂城街道 & 0.00 & 25.00 & 70.00 & 57.50 \\
+大伸市 & 九江镇 & 0.00 & 0.00 & 54.82 & 54.82 \\
+光分亭 & 西樵镇 & 0.00 & 50.00 & 77.57 & 52.57 \\
+红棉公园民国建筑群 & 九江镇 & 0.00 & 0.00 & 51.30 & 51.30 \\
+沙基圩 & 西樵镇 & 0.00 & 0.00 & 46.88 & 46.88 \\
+湖山胜迹门楼 & 西樵镇 & 14.70 & 50.00 & 78.27 & 45.92 \\
+禄舟万寿堂 & 西樵镇 & 0.00 & 50.00 & 67.96 & 42.96 \\
+大桐圩 & 西樵镇 & 0.00 & 0.00 & 42.58 & 42.58 \\
+西联村神诞 & 桂城街道 & 0.00 & 25.00 & 55.07 & 42.57 \\
 \end{longtable}
-}
+\endgroup
 
 \textbf{C.3 核心耦合区（全部样本）}
 
-{\def\LTcaptype{none} % do not increment counter
-\begin{longtable}{@{}
-  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1304}}
-  >{\centering\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1739}}
-  >{\centering\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1739}}
-  >{\centering\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1739}}
-  >{\centering\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1739}}
-  >{\centering\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1739}}@{}}
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-名称
-\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
-镇街
-\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
-CMI
-\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
-OAI
-\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
-THI
-\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
-MI
-\end{minipage} \\
-\midrule\noalign{}
+\begingroup
+\small
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.10}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.34\textwidth}>{\centering\arraybackslash}p{0.12\textwidth}>{\centering\arraybackslash}p{0.09\textwidth}>{\centering\arraybackslash}p{0.09\textwidth}>{\centering\arraybackslash}p{0.09\textwidth}>{\centering\arraybackslash}p{0.09\textwidth}@{}}
+\toprule
+名称 & 镇街 & CMI & OAI & THI & MI \\
+\midrule
 \endhead
-\bottomrule\noalign{}
+\bottomrule
 \endlastfoot
-云泉仙馆 & 西樵镇 & 70.25 & 75.0 & 77.78 & 5.15 \\
-西樵山百步云梯 & 西樵镇 & 98.58 & 50.0 & 66.51 & −7.78 \\
-九江吴家大院 & 九江镇 & 69.28 & 75.0 & 66.04 & −6.10 \\
-西樵山抗日阵亡将士暨死难同胞纪念碑 & 西樵镇 & 98.61 & 50.0 & 65.58 & −8.73 \\
-平洲传统玉器制作技艺 & 桂城街道 & 57.28 & 50.0 & 56.63 & 2.99 \\
+云泉仙馆 & 西樵镇 & 70.25 & 75.00 & 77.78 & 5.15 \\
+西樵山百步云梯 & 西樵镇 & 98.58 & 50.00 & 66.51 & −7.78 \\
+西樵山抗日阵亡将士暨死难同胞纪念碑 & 西樵镇 & 98.61 & 50.00 & 65.58 & −8.73 \\
+九江吴家大院 & 九江镇 & 69.28 & 75.00 & 66.04 & −6.10 \\
+平洲传统玉器制作技艺 & 桂城街道 & 57.28 & 50.00 & 56.63 & 2.99 \\
 \end{longtable}
-}
-
+\endgroup
 \chapter{潜力释放条件相关矩阵}\label{ux6f5cux529bux91caux653eux6761ux4ef6ux76f8ux5173ux77e9ux9635}
 
 \textbf{D.1 载体级 Pearson 矩阵（n = 165）} 见第 6.3.1 节表 6.4。
@@ -158,5 +150,5 @@ MI
 \item
   OAI × MI（载体级）: Pearson r = −0.440（正文核心发现）；
 \item
-  OAI\_mean × THI\_mean（镇街级）: Pearson r = 0.702（评级与 THI 的关联）。
+  OAI\_mean × THI\_mean（镇街级）: Pearson r = 0.702（评级对 THI 的带动）。
 \end{itemize}
