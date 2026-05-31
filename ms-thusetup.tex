@@ -33,3 +33,7 @@
 \graphicspath{{figures/}{figures/ms_thesis/}}
 \providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \usepackage{hyperref}
+\newcommand{\msttableentry}[2]{%
+  \phantomsection
+  \addcontentsline{lot}{table}{\protect\numberline{#1}#2}%
+}
