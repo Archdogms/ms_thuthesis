@@ -85,14 +85,14 @@
 
 \begin{figure}[p]
 \centering
-\begin{minipage}[t]{0.48\textwidth}
+\begin{minipage}[t]{0.495\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=0.24\textheight,keepaspectratio]{ms_thesis/fig_4_2a_kg_global.png}
+\includegraphics[width=\linewidth,height=0.34\textheight,keepaspectratio]{ms_thesis/fig_4_2a_kg_global.png}
 \caption{知识图谱全局网络}
 \end{minipage}\hfill
-\begin{minipage}[t]{0.48\textwidth}
+\begin{minipage}[t]{0.495\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=0.24\textheight,keepaspectratio]{ms_thesis/fig_4_2b_person_network.png}
+\includegraphics[width=\linewidth,height=0.34\textheight,keepaspectratio]{ms_thesis/fig_4_2b_person_network.png}
 \caption{人物关联总图}
 \end{minipage}
 
@@ -106,3 +106,9 @@
 本文进一步选取黄飞鸿人物子图用于解释文化记忆来源。该子图串联洪拳、十字拳、狮舞---醒狮、广东十虎、佛山精武体育会等实体，比合并图更适合逐项识读节点标签，也更便于说明文化记忆如何从人物向地点、技艺和事件扩展。
 
 这些子图为第 5 章的耦合分析提供了语义基础。当研究某个文化载体时，可以从知识图谱侧反向追溯与其关联的人物、事件、典籍与技艺实体，并将相关提及频次和关系证据转化为文化记忆指数的原始量值。需要注意的是，知识图谱结果仍然依赖文字识别质量、模型抽取稳定性和后续规则筛选，因此本文在使用图谱指标时保留证据句和来源文献，便于人工核查。
+
+\section{本章小结}\label{chap04-summary}
+
+本章通过典籍文本抽取和 Neo4j 图数据库，将南海区地方文化记忆整理为由人物、地点、技艺、事件和文献共同组成的关系网络。与普通名录相比，知识图谱的作用不只是增加实体数量，更重要的是呈现文化资源之间的结构关系：一部分节点能够成为网络中的中心词，围绕中心词又可以展开人物谱系、技艺传承、空间归属和文献记载等层次。以黄飞鸿人物子图为例，黄飞鸿并不是孤立的人名，而是通过洪拳、醒狮、广东十虎、佛山精武体育会等节点，与南海地方武术、岭南民俗和近代人物记忆发生联系。这种关系结构为后文判断文化厚度提供了比单一频次更丰富的依据。
+
+从文旅融合角度看，本章的结论是：南海区的文化资源并不是零散的点状材料，而是具有谱系性和层级性的知识网络。后续章节将这种网络转化为文化记忆指数，并与官方认证和旅游热度进行对照。也就是说，知识图谱本身不直接评价某个景点是否已经融合成熟，但它能够帮助识别哪些载体背后具有较强叙事基础，哪些文化线索尚未被旅游产品承接，从而为文旅融合潜力分析提供文化侧的支撑。

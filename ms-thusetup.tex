@@ -33,7 +33,16 @@
 \graphicspath{{figures/}{figures/ms_thesis/}}
 \providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \usepackage{hyperref}
-\newcommand{\msttableentry}[2]{%
+\captionsetup{
+  justification = centering,
+  singlelinecheck = false,
+}
+\newcommand{\msttablecaption}[2]{%
   \phantomsection
   \addcontentsline{lot}{table}{\protect\numberline{#1}#2}%
+  \par\vspace{0.65em}%
+  \begin{center}
+    {\fontsize{11bp}{15bp}\selectfont 表~#1\quad #2\par}
+  \end{center}
+  \vspace{0.25em}%
 }
