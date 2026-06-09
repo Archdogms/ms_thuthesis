@@ -5,10 +5,10 @@
 
 \input{ms-thusetup}
 
-\newcommand{\msstudentsignature}[3][82pt]{%
+\newcommand{\mssignatureimage}[4][width=82pt]{%
   \AddToShipoutPictureFG*{%
     \AtPageLowerLeft{%
-      \put(#2,#3){\includegraphics[width=#1]{figures/ms_thesis/student_signature.png}}%
+      \put(#2,#3){\includegraphics[#1]{#4}}%
     }%
   }%
 }
@@ -16,7 +16,8 @@
 \begin{document}
 
 \maketitle
-\msstudentsignature[76pt]{190}{452}
+\mssignatureimage[width=106pt]{180}{428}{figures/ms_thesis/signature_p02_student_date.png}
+\mssignatureimage[width=106pt]{392}{428}{figures/ms_thesis/signature_p02_tutor_date.png}
 \copyrightpage
 
 \frontmatter
@@ -43,7 +44,8 @@
 \backmatter
 \input{data/ms-acknowledgements}
 \clearpage
-\msstudentsignature{302}{553}
+\mssignatureimage[width=78pt]{305}{551}{figures/ms_thesis/signature_p77_student_compact.png}
+\mssignatureimage[width=75pt]{492}{547}{figures/ms_thesis/signature_p77_date.png}
 \statement
 \record{file=figures/ms_thesis/training_record.pdf}
 \end{document}
