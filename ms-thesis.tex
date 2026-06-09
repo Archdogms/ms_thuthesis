@@ -5,9 +5,18 @@
 
 \input{ms-thusetup}
 
+\newcommand{\msstudentsignature}[3][82pt]{%
+  \AddToShipoutPictureFG*{%
+    \AtPageLowerLeft{%
+      \put(#2,#3){\includegraphics[width=#1]{figures/ms_thesis/student_signature.png}}%
+    }%
+  }%
+}
+
 \begin{document}
 
 \maketitle
+\msstudentsignature[76pt]{190}{452}
 \copyrightpage
 
 \frontmatter
@@ -33,6 +42,8 @@
 
 \backmatter
 \input{data/ms-acknowledgements}
+\clearpage
+\msstudentsignature{302}{553}
 \statement
 \record{file=figures/ms_thesis/training_record.pdf}
 \end{document}
